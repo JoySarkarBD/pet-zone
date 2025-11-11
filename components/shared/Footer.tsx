@@ -85,7 +85,7 @@ export default function Footer() {
               Social media
             </h3>
             <div className='flex gap-1'>
-              <a
+              <Link
                 href='#'
                 className='w-[62px] h-[62px] bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors'
                 aria-label='Facebook'>
@@ -107,8 +107,8 @@ export default function Footer() {
                     </clipPath>
                   </defs>
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href='#'
                 className='w-[62px] h-[62px] bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors'
                 aria-label='Instagram'>
@@ -123,8 +123,8 @@ export default function Footer() {
                     fill='white'
                   />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href='#'
                 className='w-[62px] h-[62px] bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors'
                 aria-label='Twitter'>
@@ -139,8 +139,8 @@ export default function Footer() {
                     fill='white'
                   />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href='#'
                 className='w-[62px] h-[62px] bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors'
                 aria-label='YouTube'>
@@ -155,8 +155,8 @@ export default function Footer() {
                     fill='white'
                   />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href='#'
                 className='w-[62px] h-[62px] bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors'
                 aria-label='LinkedIn'>
@@ -171,7 +171,7 @@ export default function Footer() {
                     fill='white'
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -180,21 +180,21 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className='bg-[#241D4F] py-4'>
         <div className='container mx-auto px-16 flex justify-between items-center'>
-          <a
+          <Link
             href='#'
             className='text-white text-[16px] font-onset transition-colors font-medium'>
             Privacy policy
-          </a>
-          <a
+          </Link>
+          <Link
             href='mailto:Petgon.com'
             className='text-[#FFE067] hover:text-[#FFC61F] text-sm font-onset transition-colors font-medium'>
             Petgon.com
-          </a>
-          <a
+          </Link>
+          <Link
             href='tel:+01765432'
             className='text-[#FFE067] hover:text-white text-sm font-onset transition-colors font-medium'>
             +01765432
-          </a>
+          </Link>
           <p className='text-white/60 text-sm font-onset font-medium'>
             Acc no: 1255495456
           </p>
