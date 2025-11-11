@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import BookingCTA from "@/components/BookingCTA";
 import Hero from "@/components/Hero";
 import HowWeServe from "@/components/HowWeServe";
 import Pricing from "@/components/Pricing";
@@ -12,6 +13,7 @@ export default function Home() {
       <HowWeServe />
       <TopCategories />
       <Pricing />
+      <BookingCTA />
     </>
   );
 }

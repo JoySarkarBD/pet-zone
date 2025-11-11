@@ -5,7 +5,7 @@ import { CategoryCard } from "./CategoryCard";
 
 export default function TopCategories() {
   return (
-    <div className="bg-[#3491FA] rounded-[80px]">
+    <div className="bg-[#3491FA] rounded-[80px] py-16">
       <div className="min-h-[763px] container flex flex-col items-center justify-center">
         <div className="flex flex-row items-center justify-between w-full mb-10">
           <h2 className="text-[70px] font-(family-name:--font-clash-display) font-bold">
@@ -52,6 +52,12 @@ export default function TopCategories() {
               vectorHeight={189}
             />
           </div>
+        </div>
+
+        <div className="w-full mt-10">
+          <button className="bg-[#F56A3D] hover:bg-[#E55A2D] w-full h-[76px] text-[22px] font-medium text-white border-0 rounded-full">
+            Learn More
+          </button>
         </div>
       </div>
     </div>
