@@ -33,12 +33,12 @@ export default function Navbar() {
             Services
           </Link>
           <Link
-            href='/contact'
+            href='#'
             className='hover:text-[#F25C54] font-onset transition-colors text-lg text-[#081E3A] '>
             Contact
           </Link>
           <Link
-            href='/portfolio'
+            href='#'
             className='hover:text-[#F25C54] font-onset transition-colors text-lg text-[#081E3A] '>
             Portfolio
           </Link>

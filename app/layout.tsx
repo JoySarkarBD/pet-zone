@@ -1,3 +1,4 @@
+import Footer from "@/components/shared/Footer";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
@@ -32,6 +33,7 @@ export default function RootLayout({
         className={`${inter.variable} ${clashDisplay.variable} antialiased bg-[#6148FB]`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
