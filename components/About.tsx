@@ -3,7 +3,9 @@ import { Button } from "./ui/button";
 
 export default function About() {
   return (
-    <div className='min-h-[763px] bg-[#9B5DFF] rounded-[80px] flex items-center justify-center'>
+    <div
+      id='about'
+      className='min-h-[763px] bg-[#9B5DFF] rounded-[80px] flex items-center justify-center'>
       {/* Grid */}
       <div className='grid grid-cols-2 gap-10 items-center'>
         {/* Left Side - Image */}
