@@ -3,6 +3,7 @@ import BookingCTA from "@/components/BookingCTA";
 import Hero from "@/components/Hero";
 import HowWeServe from "@/components/HowWeServe";
 import Pricing from "@/components/Pricing";
+import TestimonialSection from "@/components/TestimonialSection";
 import TopCategories from "@/components/TopCategories";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <HowWeServe />
       <TopCategories />
+      <TestimonialSection />
       <Pricing />
       <BookingCTA />
     </>
