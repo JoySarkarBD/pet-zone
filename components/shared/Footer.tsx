@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className='bg-[#2F2666] text-white'>
       {/* Main Footer Content */}
-      <div className='container mx-auto px-16 py-12'>
+      <div className='container py-12'>
         <div className='grid grid-cols-4 gap-12'>
           {/* Brand Section */}
           <div className='col-span-1'>

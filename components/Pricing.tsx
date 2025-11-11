@@ -54,7 +54,7 @@ export default function Pricing() {
     <section
       id='pricing'
       className='min-h-[763px] bg-[#9B5DFF] rounded-[60px] flex items-center justify-center py-20 px-6 md:px-12'>
-      <div className='w-full max-w-7xl'>
+      <div className='w-full container'>
         {/* Header */}
         <div className='flex flex-col md:flex-row justify-between items-center mb-14 text-center md:text-left'>
           <h2 className='text-6xl font-(family-name:--font-clash-display) font-bold text-white'>
