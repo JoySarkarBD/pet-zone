@@ -4,9 +4,9 @@ export default function HowWeServe() {
   return (
     <div
       id='services'
-      className='min-h-[728px] container mx-auto flex items-center justify-center'>
+      className='min-h-[728px] flex items-center justify-between'>
       {/* Grid */}
-      <div className='grid grid-cols-2 gap-10 p-10 items-center'>
+      <div className='grid grid-cols-2 gap-10  container mx-auto items-center'>
         {/* Right Side - Text */}
         <div className='flex flex-col justify-center'>
           <div className='text-[70px] text-white mb-4 font-(family-name:--font-clash-display) font-bold'>
@@ -29,7 +29,7 @@ export default function HowWeServe() {
         </div>
 
         {/* Left Side - Service Cards Grid */}
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col items-end justify-center'>
           <div className='grid grid-cols-2 gap-4 font-onset'>
             {/* Trusted Pet Service Card */}
             <div className='bg-[#EA913E] rounded-3xl p-5 flex flex-col min-h-[298px] max-w-[286px]'>
