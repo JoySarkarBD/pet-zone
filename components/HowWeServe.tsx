@@ -1,7 +1,5 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Button } from "./ui/button";
+import { MotionDiv } from "./ui/motion-wrapper";
 
 export default function HowWeServe() {
   return (
@@ -11,7 +9,7 @@ export default function HowWeServe() {
       {/* Grid */}
       <div className='grid grid-cols-2 gap-10  container mx-auto items-center'>
         {/* Right Side - Text */}
-        <motion.div
+        <MotionDiv
           initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -34,13 +32,13 @@ export default function HowWeServe() {
           <Button className='py-6 rounded-full w-[184px] mt-8 bg-[#F56A3D] hover:bg-[#F25C54] text-xl cursor-pointer'>
             Learn more
           </Button>
-        </motion.div>
+        </MotionDiv>
 
         {/* Left Side - Service Cards Grid */}
         <div className='flex flex-col items-end justify-center'>
           <div className='grid grid-cols-2 gap-4 font-onset'>
             {/* Trusted Pet Service Card */}
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -79,10 +77,10 @@ export default function HowWeServe() {
                 Easily find and book top-rated vets, groomers, walkers, and
                 trainers.
               </p>
-            </motion.div>
+            </MotionDiv>
 
             {/* Expert Care Advice Card */}
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -137,10 +135,10 @@ export default function HowWeServe() {
                 Access a library of guides, tips, and health insights tailored
                 to your pet&apos;s needs.
               </p>
-            </motion.div>
+            </MotionDiv>
 
             {/* Smart Reminders Card */}
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -198,10 +196,10 @@ export default function HowWeServe() {
                 Stay on top of vet visits, vaccinations, grooming schedules, and
                 more.
               </p>
-            </motion.div>
+            </MotionDiv>
 
             {/* Personal Profile Card */}
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -238,7 +236,7 @@ export default function HowWeServe() {
                 Manage your pet&apos;s records, track health milestones, and
                 receive customized care.
               </p>
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
       </div>

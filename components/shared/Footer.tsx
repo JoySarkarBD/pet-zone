@@ -1,6 +1,4 @@
-"use client";
-
-import { motion } from "framer-motion";
+import { MotionDiv } from "../ui/motion-wrapper";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +6,7 @@ export default function Footer() {
   return (
     <footer className='bg-[#2F2666] text-white'>
       {/* Main Footer Content */}
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -183,10 +181,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </MotionDiv>
 
       {/* Bottom Bar */}
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
@@ -212,7 +210,8 @@ export default function Footer() {
             Acc no: 1255495456
           </p>
         </div>
-      </motion.div>
+      </MotionDiv>
     </footer>
   );
 }
+

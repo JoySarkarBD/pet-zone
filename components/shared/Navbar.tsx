@@ -1,14 +1,12 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { MotionNav } from "../ui/motion-wrapper";
 import { Search, User2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <motion.nav
+    <MotionNav
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
@@ -61,6 +59,7 @@ export default function Navbar() {
           </Button>
         </div>
       </div>
-    </motion.nav>
+    </MotionNav>
   );
 }
+

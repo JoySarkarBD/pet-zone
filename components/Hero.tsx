@@ -1,14 +1,12 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { MotionDiv, MotionSpan } from "./ui/motion-wrapper";
 
 export default function Hero() {
   return (
     <section className='min-h-screen bg-[#5C52FF] relative overflow-hidden bg-[url("/vector-bg-top-left.png"),_url("/vector-bg-top-right.png"),_url("/vector-bg-bottom-left.png"),_url("/vector-bg-bottom-right.png"),_url("/vector-header-group.png")] bg-no-repeat bg-position-[0_18.5px,100%_18.5px,0_100%,100%_100%,74%_44px]'>
       {/* Top Line */}
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -32,7 +30,7 @@ export default function Hero() {
           <span>Pt</span>
         </div>
 
-        <motion.span
+        <MotionSpan
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -54,11 +52,11 @@ export default function Hero() {
             </div>
           </div>
           ve,
-        </motion.span>
-      </motion.div>
+        </MotionSpan>
+      </MotionDiv>
 
       {/* Bottom Line */}
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
@@ -82,10 +80,10 @@ export default function Hero() {
           <span>ster</span>
         </div>
         <span className='text-[#FFE067]'>Happiness</span>
-      </motion.div>
+      </MotionDiv>
 
       {/* Subtitle Line */}
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.6 }}
@@ -95,10 +93,10 @@ export default function Hero() {
         <Button className='py-6 rounded-full w-[188px] mt-5 bg-[#F56A3D] hover:bg-[#F25C54] text-xl cursor-pointer'>
           Get Started
         </Button>
-      </motion.div>
+      </MotionDiv>
 
       {/* Pet Group Image */}
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.8 }}
@@ -113,7 +111,7 @@ export default function Hero() {
             priority
           />
         </div>
-      </motion.div>
+      </MotionDiv>
     </section>
   );
 }

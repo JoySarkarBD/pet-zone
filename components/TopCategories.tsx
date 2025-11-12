@@ -1,6 +1,4 @@
-"use client";
-
-import { motion } from "framer-motion";
+import { MotionDiv } from "./ui/motion-wrapper";
 import Link from "next/link";
 import { CategoryCard } from "./CategoryCard";
 
@@ -8,7 +6,7 @@ export default function TopCategories() {
   return (
     <div className='bg-[#3491FA] rounded-[80px] py-16'>
       <div className='min-h-[763px] container flex flex-col items-center justify-center'>
-        <motion.div
+        <MotionDiv
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -22,8 +20,8 @@ export default function TopCategories() {
             className='text-[34px] font-medium font-onset text-[#FFE067]'>
             See All
           </Link>
-        </motion.div>
-        <motion.div
+        </MotionDiv>
+        <MotionDiv
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -67,9 +65,9 @@ export default function TopCategories() {
               vectorHeight={189}
             />
           </div>
-        </motion.div>
+        </MotionDiv>
 
-        <motion.div
+        <MotionDiv
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -78,8 +76,9 @@ export default function TopCategories() {
           <button className='bg-[#F56A3D] hover:bg-[#E55A2D] w-full h-[76px] text-[22px] font-medium text-white border-0 rounded-full font-onset cursor-pointer'>
             Learn More
           </button>
-        </motion.div>
+        </MotionDiv>
       </div>
     </div>
   );
 }
+

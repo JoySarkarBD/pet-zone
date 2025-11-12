@@ -1,6 +1,4 @@
-"use client";
-
-import { motion } from "framer-motion";
+import { MotionDiv } from "./ui/motion-wrapper";
 import Image from "next/image";
 
 const TestimonialSection = () => {
@@ -9,7 +7,7 @@ const TestimonialSection = () => {
       <div className='container'>
         <div className='rounded-[40px] w-full flex flex-col lg:flex-row items-center justify-between'>
           {/* Left Side - Dog Image */}
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -21,10 +19,10 @@ const TestimonialSection = () => {
               fill
               className='object-contain'
             />
-          </motion.div>
+          </MotionDiv>
 
           {/* Right Side - Text and Button */}
-          <motion.div
+          <MotionDiv
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -43,11 +41,11 @@ const TestimonialSection = () => {
             <button className='h-[46px] w-[184px] bg-[#F56A3D] hover:bg-[#FF7F56] text-white text-lg font-semibold rounded-full transition duration-200 font-onset cursor-pointer'>
               Learn more
             </button>
-          </motion.div>
+          </MotionDiv>
         </div>
 
         {/* Stats Section */}
-        <motion.div
+        <MotionDiv
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -75,10 +73,11 @@ const TestimonialSection = () => {
               We Got for Our Better Services
             </p>
           </div>
-        </motion.div>
+        </MotionDiv>
       </div>
     </section>
   );
 };
 
 export default TestimonialSection;
+

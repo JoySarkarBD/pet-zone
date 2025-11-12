@@ -1,8 +1,6 @@
-"use client";
-
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { MotionDiv } from "./ui/motion-wrapper";
 
 export default function About() {
   return (
@@ -14,7 +12,7 @@ export default function About() {
           {/* Grid */}
           <div className='grid grid-cols-2 gap-10 items-center w-full justify-between'>
             {/* Left Side - Image */}
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -29,10 +27,10 @@ export default function About() {
                 priority
                 quality={100} // <-- maximum quality
               />
-            </motion.div>
+            </MotionDiv>
 
             {/* Right Side - Text */}
-            <motion.div
+            <MotionDiv
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -74,7 +72,7 @@ export default function About() {
               <Button className='py-6 rounded-full w-[184px] mt-8 bg-[#F56A3D] hover:bg-[#F25C54] text-xl cursor-pointer'>
                 Learn more
               </Button>
-            </motion.div>
+            </MotionDiv>
           </div>
         </div>
       </div>

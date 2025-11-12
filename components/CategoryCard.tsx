@@ -1,6 +1,4 @@
-"use client";
-
-import { motion } from "framer-motion";
+import { MotionDiv } from "./ui/motion-wrapper";
 import Image from "next/image";
 
 interface CategoryCardProps {
@@ -22,7 +20,7 @@ export const CategoryCard = ({
   cloudImageSrc,
   vectorHeight = 168, // Default height if no value is passed
 }: CategoryCardProps) => (
-  <motion.div
+  <MotionDiv
     initial={{ opacity: 0, y: 50 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
@@ -70,5 +68,6 @@ export const CategoryCard = ({
         </div>
       </div>
     </div>
-  </motion.div>
+  </MotionDiv>
 );
+

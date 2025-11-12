@@ -1,11 +1,9 @@
-"use client";
-
-import { motion } from "framer-motion";
+import { MotionDiv } from "./ui/motion-wrapper";
 import Image from "next/image";
 
 const BookingCTA = () => {
   return (
-    <motion.div
+    <MotionDiv
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
@@ -13,7 +11,7 @@ const BookingCTA = () => {
       className='rounded-[40px] px-20 relative py-[70px] container  flex items-center justify-center'>
       <div className=' bg-[#FFE067] rounded-[40px] h-[400px] flex items-center justify-between w-full'>
         {/* Left Side: Image of person and dog */}
-        <motion.div
+        <MotionDiv
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -25,10 +23,10 @@ const BookingCTA = () => {
             fill
             className='rounded-[20px] absolute top-2.5!'
           />
-        </motion.div>
+        </MotionDiv>
 
         {/* Right Side: Text, Button, and Customers Section */}
-        <motion.div
+        <MotionDiv
           initial={{ opacity: 0, x: 60 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -72,10 +70,11 @@ const BookingCTA = () => {
               </p>
             </div>
           </div>
-        </motion.div>
+        </MotionDiv>
       </div>
-    </motion.div>
+    </MotionDiv>
   );
 };
 
 export default BookingCTA;
+
