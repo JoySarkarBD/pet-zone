@@ -1,7 +1,7 @@
-import { MotionDiv } from "./ui/motion-wrapper";
 import { Check } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { MotionDiv } from "./ui/motion-wrapper";
 
 export default function Pricing() {
   const plans = [
@@ -97,7 +97,7 @@ export default function Pricing() {
                   {plan.price}
                   {plan.period && (
                     <span
-                      className='text-[16px] text-white/80 font-normal
+                      className='text-base text-white/80 font-normal
                     '>
                       {plan.period}
                     </span>
@@ -106,9 +106,7 @@ export default function Pricing() {
               </div>
 
               {/* Description */}
-              <p className='text-[16px] text-white/80 mb-6'>
-                {plan.description}
-              </p>
+              <p className='text-base text-white/80 mb-6'>{plan.description}</p>
 
               {/* CTA Button */}
               <Button className='w-full rounded-full mb-8 font-semibold text-white py-7 text-[20px] bg-[#F56A3D] hover:bg-[#F25C54] cursor-pointer'>
@@ -120,7 +118,7 @@ export default function Pricing() {
                 {plan.features.map((feature, i) => (
                   <li key={i} className='flex items-start gap-2 text-sm'>
                     <Check className='w-5 h-5 text-[#6148FB] mt-0.5' />
-                    <span className='text-[16px]'>{feature}</span>
+                    <span className='text-base'>{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -131,4 +129,3 @@ export default function Pricing() {
     </section>
   );
 }
-

@@ -1,5 +1,5 @@
-import { MotionDiv } from "./ui/motion-wrapper";
 import Image from "next/image";
+import { MotionDiv } from "./ui/motion-wrapper";
 
 interface CategoryCardProps {
   imageSrc: string;
@@ -43,8 +43,8 @@ export const CategoryCard = ({
 
     {/* Content Section */}
     <div className='left-5 bottom-[76px] relative z-10'>
-      <h2 className='text-2xl text-white font-semibold'>{title}</h2>
-      <p className='text-base text-white'>{description}</p>
+      <h2 className='text-2xl text-white font-semibold font-onset'>{title}</h2>
+      <p className='text-base text-white font-onset'>{description}</p>
       <div className='flex items-center gap-x-2'>
         <button className='mt-2 text-base bg-[#F56A3D] w-[126px] text-white h-[46px] rounded-full hover:bg-[#E55A2D] focus:outline-none font-onset cursor-pointer'>
           Details
@@ -70,4 +70,3 @@ export const CategoryCard = ({
     </div>
   </MotionDiv>
 );
-
