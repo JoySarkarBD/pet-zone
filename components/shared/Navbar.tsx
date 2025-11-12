@@ -1,11 +1,18 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import { Search, User2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className='bg-[#FFE067] w-full shadow-sm'>
+    <motion.nav
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className='bg-[#FFE067] w-full shadow-sm'>
       <div className='max-w-[1224px] mx-auto flex items-center justify-between px-6 py-3'>
         {/* Left Section - Logo */}
         <Link href='/' className='flex items-center'>
@@ -47,13 +54,13 @@ export default function Navbar() {
         {/* Right Section - Icons */}
         <div className='flex items-center gap-3'>
           <Button className='bg-[#F56A3D] w-[50px] h-[50px] hover:bg-[#e14b45] rounded-full text-white flex items-center justify-center'>
-            <Search className='!w-6 !h-6' />
+            <Search className='w-6! h-6!' />
           </Button>
           <Button className='bg-[#F56A3D] w-[50px] h-[50px] hover:bg-[#e14b45] rounded-full text-white flex items-center justify-center'>
-            <User2 className='!w-6 !h-6' />
+            <User2 className='w-6! h-6!' />
           </Button>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }

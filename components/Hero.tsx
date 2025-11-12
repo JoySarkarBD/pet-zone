@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "./ui/button";
 
@@ -5,7 +8,11 @@ export default function Hero() {
   return (
     <section className='min-h-screen bg-[#5C52FF] relative overflow-hidden bg-[url("/vector-bg-top-left.png"),_url("/vector-bg-top-right.png"),_url("/vector-bg-bottom-left.png"),_url("/vector-bg-bottom-right.png"),_url("/vector-header-group.png")] bg-no-repeat bg-position-[0_18.5px,100%_18.5px,0_100%,100%_100%,74%_44px]'>
       {/* Top Line */}
-      <div className='flex items-center justify-center gap-[34px] text-white text-[114px] font-(family-name:--font-clash-display) font-bold leading-none mt-[50px]'>
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className='flex items-center justify-center gap-[34px] text-white text-[114px] font-(family-name:--font-clash-display) font-bold leading-none mt-[50px]'>
         <div className='flex items-center justify-center gap-1'>
           <span>Ad</span>
           {/* Pets Circle */}
@@ -25,7 +32,11 @@ export default function Hero() {
           <span>Pt</span>
         </div>
 
-        <span className='flex items-center justify-center gap-1'>
+        <motion.span
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className='flex items-center justify-center gap-1'>
           l{/* Image circle */}
           <div className='relative w-20 h-[75px] mt-3'>
             {/* Back Circle */}
@@ -43,11 +54,15 @@ export default function Hero() {
             </div>
           </div>
           ve,
-        </span>
-      </div>
+        </motion.span>
+      </motion.div>
 
       {/* Bottom Line */}
-      <div className='flex items-center justify-center gap-[34px] text-white text-[114px] font-(family-name:--font-clash-display) font-bold leading-none mt-5'>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+        className='flex items-center justify-center gap-[34px] text-white text-[114px] font-(family-name:--font-clash-display) font-bold leading-none mt-5'>
         <div className='flex items-center justify-center gap-1'>
           <span>F</span>
           {/* Doctors Circle */}
@@ -67,19 +82,27 @@ export default function Hero() {
           <span>ster</span>
         </div>
         <span className='text-[#FFE067]'>Happiness</span>
-      </div>
+      </motion.div>
 
       {/* Subtitle Line */}
-      <div className='flex flex-col items-center text-white text-center mt-4 max-w-[617px] mx-auto text-lg font-onset font-light tracking-wide'>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        className='flex flex-col items-center text-white text-center mt-4 max-w-[617px] mx-auto text-lg font-onset font-light tracking-wide'>
         We Are well-equipped and well-prepared to protect your heath and
         <br /> hygiene while serve you. Our preparations include
         <Button className='py-6 rounded-full w-[188px] mt-5 bg-[#F56A3D] hover:bg-[#F25C54] text-xl cursor-pointer'>
           Get Started
         </Button>
-      </div>
+      </motion.div>
 
       {/* Pet Group Image */}
-      <div className='my-8 flex items-center justify-center w-full px-4'>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
+        className='my-8 flex items-center justify-center w-full px-4'>
         <div className='w-full max-w-[1038px]'>
           <Image
             src='/pets.png'
@@ -90,7 +113,7 @@ export default function Hero() {
             priority
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

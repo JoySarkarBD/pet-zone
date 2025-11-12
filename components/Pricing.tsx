@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
@@ -56,7 +59,12 @@ export default function Pricing() {
       className='min-h-[763px] bg-[#9B5DFF] rounded-[60px] flex items-center justify-center py-20 px-6 md:px-12'>
       <div className='w-full container'>
         {/* Header */}
-        <div className='flex flex-col md:flex-row justify-between items-center mb-14 text-center md:text-left'>
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className='flex flex-col md:flex-row justify-between items-center mb-14 text-center md:text-left'>
           <h2 className='text-6xl font-(family-name:--font-clash-display) font-bold text-white'>
             Pricing <span className='text-[#FFE067]'>Plan</span>
           </h2>
@@ -65,13 +73,18 @@ export default function Pricing() {
             className='text-[#FFE067] font-medium transition flex items-center text-[34px] font-onset'>
             Learn more
           </Link>
-        </div>
+        </motion.div>
 
         {/* Pricing Cards */}
         <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
-          {plans.map((plan) => (
-            <div
+          {plans.map((plan, index) => (
+            <motion.div
               key={plan.name}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              whileHover={{ y: -10, transition: { duration: 0.3 } }}
               className='relative rounded-3xl p-8 text-white shadow-xl transform transition-all font-onset
               '
               style={{
@@ -113,7 +126,7 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

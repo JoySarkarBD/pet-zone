@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -5,7 +8,12 @@ export default function Footer() {
   return (
     <footer className='bg-[#2F2666] text-white'>
       {/* Main Footer Content */}
-      <div className='container py-12'>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className='container py-12'>
         <div className='grid grid-cols-4 gap-12'>
           {/* Brand Section */}
           <div className='col-span-1'>
@@ -175,10 +183,15 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Bottom Bar */}
-      <div className='bg-[#241D4F] py-4'>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className='bg-[#241D4F] py-4'>
         <div className='container mx-auto px-16 flex justify-between items-center'>
           <Link
             href='#'
@@ -199,7 +212,7 @@ export default function Footer() {
             Acc no: 1255495456
           </p>
         </div>
-      </div>
+      </motion.div>
     </footer>
   );
 }

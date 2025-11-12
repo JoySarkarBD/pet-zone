@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 
 export default function HowWeServe() {
@@ -8,7 +11,12 @@ export default function HowWeServe() {
       {/* Grid */}
       <div className='grid grid-cols-2 gap-10  container mx-auto items-center'>
         {/* Right Side - Text */}
-        <div className='flex flex-col justify-center'>
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.7 }}
+          className='flex flex-col justify-center'>
           <div className='text-[70px] text-white mb-4 font-(family-name:--font-clash-display) font-bold'>
             <h2 className='-mb-[138px]'>How We</h2>
             <br />
@@ -26,13 +34,19 @@ export default function HowWeServe() {
           <Button className='py-6 rounded-full w-[184px] mt-8 bg-[#F56A3D] hover:bg-[#F25C54] text-xl cursor-pointer'>
             Learn more
           </Button>
-        </div>
+        </motion.div>
 
         {/* Left Side - Service Cards Grid */}
         <div className='flex flex-col items-end justify-center'>
           <div className='grid grid-cols-2 gap-4 font-onset'>
             {/* Trusted Pet Service Card */}
-            <div className='bg-[#EA913E] rounded-3xl p-5 flex flex-col min-h-[298px] max-w-[286px]'>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+              className='bg-[#EA913E] rounded-3xl p-5 flex flex-col min-h-[298px] max-w-[286px]'>
               <div
                 className='w-[62px] h-[62px] border border-black rounded-lg flex items-center justify-center mb-8 bg-[#D38238]
               '>
@@ -65,10 +79,16 @@ export default function HowWeServe() {
                 Easily find and book top-rated vets, groomers, walkers, and
                 trainers.
               </p>
-            </div>
+            </motion.div>
 
             {/* Expert Care Advice Card */}
-            <div className='bg-[#5240B7] rounded-3xl p-5 flex flex-col min-h-[298px] max-w-[286px]'>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+              className='bg-[#5240B7] rounded-3xl p-5 flex flex-col min-h-[298px] max-w-[286px]'>
               <div
                 className='w-[62px] h-[62px] rounded-lg flex items-center justify-center mb-8 bg-[#6554C3]
               '>
@@ -117,10 +137,16 @@ export default function HowWeServe() {
                 Access a library of guides, tips, and health insights tailored
                 to your pet&apos;s needs.
               </p>
-            </div>
+            </motion.div>
 
             {/* Smart Reminders Card */}
-            <div className='bg-[#5CCB60] rounded-3xl p-5 flex flex-col min-h-[298px] max-w-[286px]'>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+              className='bg-[#5CCB60] rounded-3xl p-5 flex flex-col min-h-[298px] max-w-[286px]'>
               <div className='w-[62px] h-[62px] rounded-lg flex items-center justify-center mb-8 bg-[#47BA4C]'>
                 <svg
                   width='28'
@@ -172,10 +198,16 @@ export default function HowWeServe() {
                 Stay on top of vet visits, vaccinations, grooming schedules, and
                 more.
               </p>
-            </div>
+            </motion.div>
 
             {/* Personal Profile Card */}
-            <div className='bg-[#FC87A7] rounded-3xl p-5 flex flex-col min-h-[298px] max-w-[286px]'>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+              className='bg-[#FC87A7] rounded-3xl p-5 flex flex-col min-h-[298px] max-w-[286px]'>
               <div className='w-[62px] h-[62px] rounded-lg flex items-center justify-center mb-8 bg-[#F06E91]'>
                 <svg
                   width='32'
@@ -206,7 +238,7 @@ export default function HowWeServe() {
                 Manage your pet&apos;s records, track health milestones, and
                 receive customized care.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
