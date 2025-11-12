@@ -1,5 +1,5 @@
-import { MotionDiv } from "./ui/motion-wrapper";
 import Image from "next/image";
+import { Counter, MotionDiv } from "./ui/motion-wrapper";
 
 const TestimonialSection = () => {
   return (
@@ -53,13 +53,13 @@ const TestimonialSection = () => {
           className='-top-[46px] bg-[#5240B7] text-white relative z-10 rounded-[40px] py-8 px-6 flex flex-col md:flex-row items-center justify-around gap-6 shadow-xl'>
           <div className='text-start'>
             <h3 className='text-[64px] leading-[69px] font-(family-name:--font-clash-display) font-semibold'>
-              +12,000
+              +<Counter to={12000} duration={2.5} />
             </h3>
             <p className='text-white/80 font-onset'>Regular Pet Parents User</p>
           </div>
           <div className='text-start'>
             <h3 className='text-[64px] leading-[69px] font-(family-name:--font-clash-display) font-semibold'>
-              +10 Years
+              +<Counter to={10} duration={2} /> Years
             </h3>
             <p className='text-white/80 font-onset'>
               Provide Best Services for Pet
@@ -67,7 +67,7 @@ const TestimonialSection = () => {
           </div>
           <div className='text-start'>
             <h3 className='text-[64px] leading-[69px] font-(family-name:--font-clash-display) font-semibold'>
-              +5 Award
+              +<Counter to={5} duration={1.5} /> Award
             </h3>
             <p className='text-white/80 font-onset'>
               We Got for Our Better Services
@@ -80,4 +80,3 @@ const TestimonialSection = () => {
 };
 
 export default TestimonialSection;
-
