@@ -33,7 +33,7 @@ const TestimonialSection = () => {
               <span className='text-[#FF7F56]'>Pet Parents</span> <br />
               Are Saying
             </h2>
-            <p className='text-white/90 text-lg max-w-[600px] leading-relaxed'>
+            <p className='text-white/90 text-lg max-w-[600px] leading-relaxed font-onset'>
               Hear what real pet parents have to say about their experience —
               and how Petgon has made caring for their furry friends easier,
               smarter, and more joyful.
