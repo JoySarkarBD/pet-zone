@@ -46,7 +46,7 @@ interface CounterProps {
 export function Counter({
   from = 0,
   to,
-  duration = 2,
+  duration = 5,
   className = "",
   prefix = "",
   suffix = "",
