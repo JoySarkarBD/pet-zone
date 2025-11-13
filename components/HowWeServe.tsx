@@ -46,7 +46,7 @@ export default function HowWeServe() {
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               className='bg-[#EA913E] rounded-3xl p-5 flex flex-col min-h-[298px] max-w-[286px]'>
               <div
-                className='w-[62px] h-[62px] border border-black rounded-lg flex items-center justify-center mb-8 bg-[#D38238]
+                className='w-[62px] h-[62px] rounded-lg flex items-center justify-center mb-8 bg-[#D38238]
               '>
                 <svg
                   width='32'

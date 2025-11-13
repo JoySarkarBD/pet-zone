@@ -73,7 +73,7 @@ export default function TopCategories() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className='w-full mt-10'>
-          <button className='bg-[#F56A3D] hover:bg-[#E55A2D] w-full h-[76px] text-[22px] font-normal text-white border-0 rounded-full font-onset cursor-pointer'>
+          <button className='bg-[#F56A3D] hover:bg-[#E55A2D] w-full h-[76px] text-[22px] font-normal text-white rounded-full font-onset cursor-pointer'>
             Learn more
           </button>
         </MotionDiv>

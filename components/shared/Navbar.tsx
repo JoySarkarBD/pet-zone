@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { MotionNav } from "../ui/motion-wrapper";
 import { Search, User2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { MotionNav } from "../ui/motion-wrapper";
 
 export default function Navbar() {
   return (
@@ -62,4 +62,3 @@ export default function Navbar() {
     </MotionNav>
   );
 }
-
