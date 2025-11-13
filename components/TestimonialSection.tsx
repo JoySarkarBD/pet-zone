@@ -19,7 +19,12 @@ const TestimonialSection = () => {
               fill
               className='object-contain'
             />
-            <div className='absolute top-[357px] left-[222px]'>
+            <MotionDiv
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className='absolute top-[357px] left-[222px]'>
               <div className='relative'>
                 {/* Speech Bubble */}
                 <div className="absolute top-0 left-0 w-[357px] h-[140px] bg-[#5CCB60] rounded-b-2xl rounded-tr-2xl before:content-[''] before:absolute before:-left-[18.5px] before:w-0 before:h-0 before:border-t-transparent before:border-b-[20.5px] before:border-b-transparent before:border-r-22 before:border-r-[#5CCB60]">
@@ -41,7 +46,7 @@ const TestimonialSection = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </MotionDiv>
           </MotionDiv>
 
           {/* Right Side - Text and Button */}
