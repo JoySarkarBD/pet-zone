@@ -43,10 +43,12 @@ export const CategoryCard = ({
 
     {/* Content Section */}
     <div className='left-5 bottom-[76px] relative z-10'>
-      <h2 className='text-2xl text-white font-semibold font-onset'>{title}</h2>
-      <p className='text-base text-white font-onset'>{description}</p>
+      <h2 className='text-[26px] text-white font-medium font-onset'>{title}</h2>
+      <p className='text-base text-white font-onset font-light'>
+        {description}
+      </p>
       <div className='flex items-center gap-x-2'>
-        <button className='mt-2 text-base bg-[#F56A3D] w-[126px] text-white h-[46px] rounded-full hover:bg-[#E55A2D] focus:outline-none font-onset cursor-pointer'>
+        <button className='mt-2 text-base bg-[#F56A3D] w-[126px] text-white h-[46px] rounded-full hover:bg-[#E55A2D] font-normal focus:outline-none font-onset cursor-pointer'>
           Details
         </button>
         <div className='mt-2 cursor-pointer'>

@@ -54,7 +54,6 @@ export default function Hero() {
           ve,
         </MotionSpan>
       </MotionDiv>
-
       {/* Bottom Line */}
       <MotionDiv
         initial={{ opacity: 0, y: 50 }}
@@ -81,20 +80,20 @@ export default function Hero() {
         </div>
         <span className='text-[#FFE067]'>Happiness</span>
       </MotionDiv>
-
       {/* Subtitle Line */}
       <MotionDiv
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.6 }}
-        className='flex flex-col items-center text-white text-center mt-4 max-w-[617px] mx-auto text-lg font-onset font-light tracking-wide'>
-        We Are well-equipped and well-prepared to protect your heath and
-        <br /> hygiene while serve you. Our preparations include
-        <Button className='py-6 rounded-full w-[188px] mt-5 bg-[#F56A3D] hover:bg-[#F25C54] text-xl cursor-pointer'>
+        className='flex flex-col items-center text-center mt-4 max-w-[617px] mx-auto  tracking-wide'>
+        <p className='font-onset font-light text-white/80 text-lg px-5'>
+          We Are well-equipped and well-prepared to protect your heath and
+          hygiene while serve you. Our preparations include
+        </p>
+        <Button className='py-6 rounded-full w-[188px] mt-5 bg-[#F56A3D] hover:bg-[#F25C54] text-xl cursor-pointer font-normal font-onset'>
           Get Started
         </Button>
       </MotionDiv>
-
       {/* Pet Group Image */}
       <MotionDiv
         initial={{ opacity: 0, scale: 0.9 }}

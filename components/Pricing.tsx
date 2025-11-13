@@ -68,7 +68,7 @@ export default function Pricing() {
           </h2>
           <Link
             href='#'
-            className='text-[#FFE067] font-medium transition flex items-center text-[34px] font-onset'>
+            className='text-[34px] font-normal font-onset text-[#FFE067]'>
             Learn more
           </Link>
         </MotionDiv>

@@ -22,14 +22,14 @@ export default function HowWeServe() {
             <br />
             <h2 className='text-[#FEA552]'>Pet Partners</h2>
           </div>
-          <p className='text-white text-lg font-onset max-w-[570px] w-full mb-7'>
+          <p className='font-onset font-light text-white/80 text-lg max-w-[570px] w-full mb-7  leading-[160%]'>
             We provide trusted care services, expert advice, and smart tools to
             help you give your pets the best life possible. From easy booking to
             real-time updates and personalized support, we make pet care simple,
             reliable, and joyful — just the way it should be.
           </p>
 
-          <Button className='py-6 rounded-full w-[184px] mt-8 bg-[#F56A3D] hover:bg-[#F25C54] text-xl cursor-pointer'>
+          <Button className='py-6 rounded-full w-[184px] mt-8 bg-[#F56A3D] hover:bg-[#F25C54] text-xl cursor-pointer font-normal font-onset'>
             Learn more
           </Button>
         </MotionDiv>
@@ -73,7 +73,7 @@ export default function HowWeServe() {
               <h3 className='text-white text-2xl font-bold mb-3'>
                 Trusted Pet Service
               </h3>
-              <p className='text-white opacity-90 text-lg'>
+              <p className='font-onset font-light text-white/80 text-lg leading-[160%]'>
                 Easily find and book top-rated vets, groomers, walkers, and
                 trainers.
               </p>
@@ -131,7 +131,7 @@ export default function HowWeServe() {
               <h3 className='text-white text-2xl font-bold mb-3'>
                 Expert Care Advice
               </h3>
-              <p className='text-white opacity-90 text-lg'>
+              <p className='font-onset font-light text-white/80 text-lg leading-[160%]'>
                 Access a library of guides, tips, and health insights tailored
                 to your pet&apos;s needs.
               </p>
@@ -192,7 +192,7 @@ export default function HowWeServe() {
               <h3 className='text-white text-2xl font-bold mb-3'>
                 Smart Reminders
               </h3>
-              <p className='text-white opacity-90 text-lg'>
+              <p className='font-onset font-light text-white/80 text-lg leading-[160%]'>
                 Stay on top of vet visits, vaccinations, grooming schedules, and
                 more.
               </p>
@@ -232,7 +232,7 @@ export default function HowWeServe() {
               <h3 className='text-white text-2xl font-bold mb-3'>
                 Personal Profile
               </h3>
-              <p className='text-white opacity-90 text-lg'>
+              <p className='font-onset font-light text-white/80 text-lg leading-[160%]'>
                 Manage your pet&apos;s records, track health milestones, and
                 receive customized care.
               </p>

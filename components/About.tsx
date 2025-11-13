@@ -39,12 +39,16 @@ export default function About() {
               <h2 className='text-[70px] text-white mb-4 font-(family-name:--font-clash-display) font-bold'>
                 About <span className='text-[#FFE067]'>Petgon</span>
               </h2>
-              <p className='text-white text-lg font-onset max-w-[545px] w-full mb-7'>
+              <p className='font-onset font-light text-white/80 max-w-[545px] w-full mb-7 leading-[160%]'>
                 At Petgon, we believe pets are family. Our platform is dedicated
+                <br />
                 to making pet care simpler, smarter, and more joyful. Whether
+                <br />
                 you’re looking for trusted services, expert advice, or simply
-                ways to better care for your furry friends, Petgon brings
-                everything you need together in one place.
+                ways
+                <br /> to better care for your furry friends, Petgon brings
+                everything
+                <br /> you need together in one place.
               </p>
 
               <ul className='font-onset text-lg'>
@@ -64,12 +68,14 @@ export default function About() {
                       className='object-contain'
                       quality={100}
                     />
-                    <span>{item}</span>
+                    <span className='font-onset font-light text-white text-lg'>
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
 
-              <Button className='py-6 rounded-full w-[184px] mt-8 bg-[#F56A3D] hover:bg-[#F25C54] text-xl cursor-pointer'>
+              <Button className='py-6 rounded-full w-[188px] mt-5 bg-[#F56A3D] hover:bg-[#F25C54] text-xl cursor-pointer font-normal font-onset'>
                 Learn more
               </Button>
             </MotionDiv>

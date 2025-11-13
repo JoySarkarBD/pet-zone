@@ -1,5 +1,5 @@
-import { MotionDiv } from "./ui/motion-wrapper";
 import Image from "next/image";
+import { MotionDiv } from "./ui/motion-wrapper";
 
 const BookingCTA = () => {
   return (
@@ -37,7 +37,7 @@ const BookingCTA = () => {
             Discount
           </h2>
           <div className='flex items-center gap-x-3 mt-9'>
-            <button className='bg-[#FF7F56] text-white py-3 px-8 rounded-full text-xl hover:bg-[#E86C4D] transition duration-200 font-onset cursor-pointer'>
+            <button className='bg-[#FF7F56] text-white py-3 px-8 rounded-full text-xl hover:bg-[#E86C4D] transition duration-200 font-normal font-onset cursor-pointer'>
               Book Now
             </button>
             <div className='flex items-center space-x-3'>
@@ -77,4 +77,3 @@ const BookingCTA = () => {
 };
 
 export default BookingCTA;
-

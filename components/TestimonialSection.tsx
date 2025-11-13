@@ -19,6 +19,29 @@ const TestimonialSection = () => {
               fill
               className='object-contain'
             />
+            <div className='absolute top-[357px] left-[222px]'>
+              <div className='relative'>
+                {/* Speech Bubble */}
+                <div className="absolute top-0 left-0 w-[357px] h-[140px] bg-[#5CCB60] rounded-b-2xl rounded-tr-2xl before:content-[''] before:absolute before:-left-[18.5px] before:w-0 before:h-0 before:border-t-transparent before:border-b-[20.5px] before:border-b-transparent before:border-r-22 before:border-r-[#5CCB60]">
+                  <div className='flex items-center gap-[7px] mt-5 ml-5 mb-1'>
+                    <Image
+                      src='/pet-lover.png'
+                      alt='pet lover'
+                      width={32}
+                      height={32}
+                      className='object-contain'
+                    />
+                    <h6 className='text-white font-onset text-base font-semibold'>
+                      Alex julian
+                    </h6>
+                  </div>
+                  <p className='font-onset font-light text-white text-base px-5'>
+                    From advice to service booking, everything is seamless. I
+                    trust Petgon with all my pet care needs!
+                  </p>
+                </div>
+              </div>
+            </div>
           </MotionDiv>
 
           {/* Right Side - Text and Button */}
@@ -33,12 +56,13 @@ const TestimonialSection = () => {
               <span className='text-[#FF7F56]'>Pet Parents</span> <br />
               Are Saying
             </h2>
-            <p className='text-white/90 text-lg max-w-[600px] leading-relaxed font-onset'>
+            <p className='text-white/90 text-lg max-w-[600px] leading-[160%] font-onset font-light'>
               Hear what real pet parents have to say about their experience —
+              <br />
               and how Petgon has made caring for their furry friends easier,
               smarter, and more joyful.
             </p>
-            <button className='h-[46px] w-[184px] bg-[#F56A3D] hover:bg-[#FF7F56] text-white text-lg font-semibold rounded-full transition duration-200 font-onset cursor-pointer'>
+            <button className='h-[46px] w-[184px] bg-[#F56A3D] hover:bg-[#FF7F56] text-white text-lg font-normal rounded-full transition duration-200 font-onset cursor-pointer'>
               Learn more
             </button>
           </MotionDiv>
@@ -55,13 +79,15 @@ const TestimonialSection = () => {
             <h3 className='text-[64px] leading-[69px] font-(family-name:--font-clash-display) font-semibold'>
               +<Counter to={12000} duration={2.5} />
             </h3>
-            <p className='text-white/80 font-onset'>Regular Pet Parents User</p>
+            <p className='text-white/80 font-onset font-normal'>
+              Regular Pet Parents User
+            </p>
           </div>
           <div className='text-start'>
             <h3 className='text-[64px] leading-[69px] font-(family-name:--font-clash-display) font-semibold'>
               +<Counter to={10} duration={2} /> Years
             </h3>
-            <p className='text-white/80 font-onset'>
+            <p className='text-white/80 font-onset font-normal'>
               Provide Best Services for Pet
             </p>
           </div>
@@ -69,7 +95,7 @@ const TestimonialSection = () => {
             <h3 className='text-[64px] leading-[69px] font-(family-name:--font-clash-display) font-semibold'>
               +<Counter to={5} duration={1.5} /> Award
             </h3>
-            <p className='text-white/80 font-onset'>
+            <p className='text-white/80 font-onset font-normal'>
               We Got for Our Better Services
             </p>
           </div>

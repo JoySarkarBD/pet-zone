@@ -1,6 +1,6 @@
-import { MotionDiv } from "./ui/motion-wrapper";
 import Link from "next/link";
 import { CategoryCard } from "./CategoryCard";
+import { MotionDiv } from "./ui/motion-wrapper";
 
 export default function TopCategories() {
   return (
@@ -17,7 +17,7 @@ export default function TopCategories() {
           </h2>
           <Link
             href='#'
-            className='text-[34px] font-medium font-onset text-[#FFE067]'>
+            className='text-[34px] font-normal font-onset text-[#FFE067]'>
             See All
           </Link>
         </MotionDiv>
@@ -73,12 +73,11 @@ export default function TopCategories() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className='w-full mt-10'>
-          <button className='bg-[#F56A3D] hover:bg-[#E55A2D] w-full h-[76px] text-[22px] font-medium text-white border-0 rounded-full font-onset cursor-pointer'>
-            Learn More
+          <button className='bg-[#F56A3D] hover:bg-[#E55A2D] w-full h-[76px] text-[22px] font-normal text-white border-0 rounded-full font-onset cursor-pointer'>
+            Learn more
           </button>
         </MotionDiv>
       </div>
     </div>
   );
 }
-

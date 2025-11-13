@@ -37,21 +37,21 @@ export default function Footer() {
               <li>
                 <Link
                   href='#'
-                  className='text-white hover:text-white text-base font-medium font-onset transition-colors'>
+                  className='text-white hover:text-white text-base font-normal font-onset transition-colors'>
                   Home
                 </Link>
               </li>
               <li>
                 <Link
                   href='#'
-                  className='text-white hover:text-white text-base font-medium font-onset transition-colors'>
+                  className='text-white hover:text-white text-base font-normal font-onset transition-colors'>
                   Product
                 </Link>
               </li>
               <li>
                 <Link
                   href='#'
-                  className='text-white hover:text-white text-base font-medium font-onset transition-colors'>
+                  className='text-white hover:text-white text-base font-normal font-onset transition-colors'>
                   Categories
                 </Link>
               </li>
@@ -64,21 +64,21 @@ export default function Footer() {
               <li>
                 <Link
                   href='#'
-                  className='text-white hover:text-white text-base font-medium font-onset transition-colors'>
+                  className='text-white hover:text-white text-base font-normal font-onset transition-colors'>
                   Services
                 </Link>
               </li>
               <li>
                 <Link
                   href='/#about'
-                  className='text-white hover:text-white text-base font-medium font-onset transition-colors'>
+                  className='text-white hover:text-white text-base font-normal font-onset transition-colors'>
                   About
                 </Link>
               </li>
               <li>
                 <Link
                   href='#'
-                  className='text-white hover:text-white text-base font-medium font-onset transition-colors'>
+                  className='text-white hover:text-white text-base font-normal font-onset transition-colors'>
                   Support
                 </Link>
               </li>
@@ -87,7 +87,7 @@ export default function Footer() {
 
           {/* Social Media Section */}
           <div>
-            <h3 className='text-white hover:text-white text-base font-medium font-onset transition-colors mb-6'>
+            <h3 className='text-white hover:text-white text-base font-normal font-onset transition-colors mb-6'>
               Social media
             </h3>
             <div className='flex gap-1'>
